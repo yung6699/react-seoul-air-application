@@ -2,6 +2,10 @@
   "name": "boilerplate",
   "version": "1.0.0",
   "description": "\"node.js react boilerplate\"",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yung6699/react-boilerplate.git"
+  },
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
