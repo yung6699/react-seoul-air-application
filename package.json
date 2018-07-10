@@ -1,10 +1,10 @@
 {
-  "name": "boilerplate",
+  "name": "seoul-air",
   "version": "1.0.0",
-  "description": "\"node.js react boilerplate\"",
+  "description": "서울 공공데이터 대기 오염 애플리케이션",
   "repository": {
     "type": "git",
-    "url": "https://github.com/yung6699/react-boilerplate.git"
+    "url": "https://github.com/yung6699/react-seoul-air-application.git"
   },
   "main": "index.js",
   "scripts": {
