@@ -1,12 +1,8 @@
 {
-  "name": "react boilerplate",
+  "name": "boilerplate",
   "version": "1.0.0",
   "description": "\"node.js react boilerplate\"",
   "main": "index.js",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/yung6699/react-boilerplate.git"
-  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "clean": "rm -rf build public/bundle.js",
