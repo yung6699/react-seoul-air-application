@@ -1,0 +1,40 @@
+.item {
+  display: block;
+  border-bottom: 1px solid black;
+  width: 100%;
+  padding: 0 20px;
+}
+
+.item:after{
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.item .section1{
+  float: left;
+  text-align: center;
+}
+
+.item .section1 .name{
+  font-size:30px;
+  padding-top: 20px;
+}
+
+.item .section1 img{
+  width: 100%;
+  height: auto;
+}
+
+.item .section2{
+  float: left;
+  padding-top:10px;
+}
+
+.item .section2 div {
+  height: 100%;
+  font-size: 20px;
+  padding-left: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}

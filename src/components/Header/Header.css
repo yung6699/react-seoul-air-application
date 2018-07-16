@@ -1,0 +1,47 @@
+.header {
+  width: 400px;
+  padding: 10px 0px;
+  text-align: center;
+  border-bottom: 1px solid black;
+  box-sizing: border-box;
+  background-color: black;
+  position: fixed;
+}
+
+.header::after{
+  display: block;
+  clear: both;
+  content: '';
+}
+
+.header div:nth-child(1){
+  float: left;
+  width: 75%;
+}
+
+.header div:nth-child(1) input{
+  box-sizing : border-box;
+  width: 90%;
+  padding: 10px;
+  font-size: 15px;
+  outline: none;
+  border : 2px solid grey;
+  border-radius: 10px;
+}
+
+.header div:nth-child(2){
+  float: left;
+  width: 20%;
+}
+
+.header div:nth-child(2) button {
+  cursor: pointer;
+  width: 100%;
+  padding: 10px;
+  font-size: 15px;
+  box-sizing : border-box;
+  border-radius: 10px;
+  border : 2px solid grey;
+  outline: none;
+}
+

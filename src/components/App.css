@@ -1,0 +1,25 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  position: relative;
+  margin: 50px auto;
+  width: 400px;
+  height: 800px;
+  overflow-y: scroll;
+  border: 2px solid #1f1f1f;
+  border-radius: 10px;
+
+}
