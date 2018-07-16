@@ -62,7 +62,9 @@
     "build": "NODE_PATH=src node scripts/build.js",
     "test": "node scripts/test.js --env=jsdom"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "eslint-config-airbnb-base": "^13.0.0"
+  },
   "jest": {
     "collectCoverageFrom": [
       "src/**/*.{js,jsx,mjs}"
