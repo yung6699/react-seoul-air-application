@@ -22,4 +22,5 @@ yarn-debug.log*
 yarn-error.log*
 db-config.json
 package-lock.json
+yarn.lock
 
