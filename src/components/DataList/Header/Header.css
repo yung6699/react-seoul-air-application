@@ -1,11 +1,10 @@
 .header {
+  position: fixed;
   width: 400px;
   padding: 10px 0px;
   text-align: center;
-  border-bottom: 1px solid black;
   box-sizing: border-box;
-  background-color: black;
-  position: fixed;
+  background-color: #000000;
 }
 
 .header::after{
@@ -25,23 +24,23 @@
   padding: 10px;
   font-size: 15px;
   outline: none;
-  border : 2px solid grey;
   border-radius: 10px;
+  line-height: -18px; 
 }
 
 .header div:nth-child(2){
   float: left;
-  width: 20%;
+  width: 22%;
 }
 
 .header div:nth-child(2) button {
+  line-height: -18px; 
   cursor: pointer;
   width: 100%;
   padding: 10px;
   font-size: 15px;
   box-sizing : border-box;
   border-radius: 10px;
-  border : 2px solid grey;
   outline: none;
 }
 

@@ -10,16 +10,19 @@ function getItemsAPI(){
 
 // 액션 타입을 정의해준다.
 const GETITEMS = 'list/GETDATA'
+const SELECTITEM = 'list/SELECTITEM'
 const CHANGE = 'list/CHANGE'
 
 
 // 액션 생성 함수를 만듭니다. 이 함수들은 나중에 다른 파일에서 불러와야 하므로 내보내줍니다.
 export const getItems = createAction(GETITEMS, getItemsAPI);
 export const change = createAction(CHANGE, data => data)
+export const selectedItem = createAction(SELECTITEM, value => value)
 
 // 모듈의 초기 상태를 정의합니다.
 const initialState = {
     keyword: '',
+    selected:'',
     items : []
 }
 
@@ -32,10 +35,23 @@ export default handleActions({
         onSuccess: (state, { payload }) => {
          const { data } = payload;
          return {
-            items : data.RealtimeCityAir.row
+            ...state,
+            items : data.RealtimeCityAir.row        
          }
         }
       }),
+    
+    [SELECTITEM]: (state, {payload}) => {
+
+        const itemFind = state.items.filter((item) => {
+            return payload === item.MSRSTE_NM
+        });
+
+        return {
+            ...state,
+            'selected': itemFind[0]
+        }
+    },
 
     [CHANGE]: (state, {payload}) => {
         return {

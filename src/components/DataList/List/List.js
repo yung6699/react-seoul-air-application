@@ -14,7 +14,7 @@ class List extends Component {
   }
 
   render() {
-    const { items, handleReload, handleChange, keyword } = this.props; 
+    const { items, handleReload, handleChange, handleSelect, keyword } = this.props; 
     return ( 
       <div>
         <Header 
@@ -24,7 +24,8 @@ class List extends Component {
         />
         <ul className="list">
           {items.map((item, index) => {
-            return <ListItem data={item} 
+            return <ListItem data={item}
+            handleSelect={handleSelect} 
             key={index} index={index} />
           })}
         </ul>

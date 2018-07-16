@@ -1,8 +1,9 @@
 .item {
   display: block;
-  border-bottom: 1px solid black;
-  width: 100%;
+  border: 3px solid #000000;
   padding: 0 20px;
+  margin: 10px;
+  border-radius: 10px
 }
 
 .item:after{
@@ -13,12 +14,14 @@
 
 .item .section1{
   float: left;
+  width: 30%;
   text-align: center;
 }
 
 .item .section1 .name{
-  font-size:30px;
+  font-size:25px;
   padding-top: 20px;
+  padding-bottom: 10px;
 }
 
 .item .section1 img{
@@ -28,13 +31,12 @@
 
 .item .section2{
   float: left;
-  padding-top:10px;
+  padding:10px 0px;
+  text-align: left;
 }
 
 .item .section2 div {
   height: 100%;
   font-size: 20px;
-  padding-left: 30px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding: 10px 0 0 40px;
 }

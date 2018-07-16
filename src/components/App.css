@@ -13,13 +13,16 @@ a {
   text-decoration: none;
 }
 
+#root {
+  text-align: center;
+}
+
 .container {
-  position: relative;
-  margin: 50px auto;
+  display: inline-block;
+  margin: 50px;
   width: 400px;
   height: 800px;
   overflow-y: scroll;
-  border: 2px solid #1f1f1f;
+  border: 10px solid #000000;
   border-radius: 10px;
-
 }

@@ -1,5 +1,6 @@
 .list{
   width: 100%;
-  padding-top: 70px;
-  overflow-y: scroll
+  padding-top: 65px;
+  overflow-y: scroll;
+  background-color: #f7f7f7;
 }

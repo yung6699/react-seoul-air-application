@@ -1,0 +1,43 @@
+.detail-section {
+  width: 100%;
+}
+
+.detail-section .section01 {
+  width: 100%;
+  padding: 50px 0px 20px 0px;
+}
+
+.detail-section .section01 .current-date {
+  padding-top: 10px;
+  font-size: 20px;
+}
+
+.detail-section .section01 .current-location{
+  text-align: center;
+  padding-right:20px;
+  font-size: 50px;
+}
+
+.detail-section .section01 .current-location span img{
+  width: 50px;
+  vertical-align: middle;
+}
+
+.detail-section .section02 {
+  width: 100%;
+  padding: 10px 0px 10px 0px;
+}
+
+.detail-section .section02 img {
+  width: 70%;
+}
+
+.detail-section .section03 {
+  width: 100%;
+  font-size: 50px;
+}
+
+.detail-section .section03 div {
+  width: 100%;
+  padding: 5px 0px;
+}

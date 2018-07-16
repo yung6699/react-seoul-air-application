@@ -1,0 +1,24 @@
+
+.section04 {
+  width: 100%;
+}
+
+.section04 table {
+  width: 90%;
+  margin: auto;
+  padding : 25px 0px;
+  border: 1px solid grey;
+  border-radius: 10px;
+  font-size: 20px;
+
+}
+
+.section04 table tr td:nth-child(1) {
+  width: 40%;
+  padding: 5px;
+}
+
+.section04 table tr td:nth-child(2) {
+  width: 60%;
+  padding: 5px;
+}

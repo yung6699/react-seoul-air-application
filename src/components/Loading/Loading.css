@@ -1,0 +1,28 @@
+.loading-wrap{
+  position: relative; 
+  top: 50%; 
+  transform: translateY(-50%); 
+} 
+
+.loading-wrap div {
+  padding: 10px 0;
+}
+
+.loading-wrap img{
+  width: 80%;
+}
+
+.loading-wrap .text{
+  text-align: center;
+  line-height: 1.5;
+  font-size: 40px;
+}
+
+.loading-wrap p{
+  line-height: 1.5;
+  font-size: 20px;
+}
+
+.loading-wrap p span{
+  font-size: 15px;
+}
