@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import ListItem from 'components/ListItem'
-import Header from 'components/Header'
+import ListItem from 'components/DataList/ListItem'
+import Header from 'components/DataList/Header'
 import './List.css'
 
 class List extends Component {

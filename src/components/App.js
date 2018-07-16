@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import {connect} from 'react-redux'
 import * as listActions from 'store/modules/list'
-import List from 'components/List'
+import DataList from 'components/DataList'
 import './App.css'
 
 class App extends Component {
@@ -33,7 +33,7 @@ class App extends Component {
 
         return (
             <div className="container">
-                <List handleReload={getItems} // 새로고침
+                <DataList handleReload={getItems} // 새로고침
                     handleChange={this.handleChange} items={filteredItems} kekeyword={keyword}/>
             </div>
         )
