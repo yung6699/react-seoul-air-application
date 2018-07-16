@@ -1,5 +1,9 @@
 {
   "name": "react-seoul-air",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yung6699/react-seoul-air-application.git"
+  },
   "version": "0.1.0",
   "private": true,
   "dependencies": {
