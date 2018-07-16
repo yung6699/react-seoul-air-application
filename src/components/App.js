@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import * as listActions from 'store/modules/list'
@@ -29,10 +30,28 @@ class App extends Component {
           handleChange = {this.handleChange} 
           items={filteredItems}
           kekeyword={keyword}/>
+=======
+import React, { Component } from 'react';
+
+class App extends Component {
+
+  constructor(){
+		super();
+		this.state = {
+		};
+	}
+
+  render() { 
+    return (  
+      <div>
+         <h1>hello world!</h1>
+         <h2>hello world!</h2>
+>>>>>>> d0c9a3a658073a6185f6068385699e05a38ec80a
       </div>
     );
   }
 }
+<<<<<<< HEAD
 // props 값으로 넣어 줄 상태를 정의해줍니다.
 const mapStateToProps = (state) => {
   
@@ -53,3 +72,7 @@ const mapDispatchToProps = dispatch => ({
 export default connect(mapStateToProps, mapDispatchToProps)(App);
 
 
+=======
+ 
+export default App;
+>>>>>>> d0c9a3a658073a6185f6068385699e05a38ec80a
