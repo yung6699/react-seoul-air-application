@@ -8,6 +8,23 @@ function getItemsAPI(){
 }
 
 
+const imgCount = (value=30) => {
+    if (value >= 0 && value < 51) {
+        return "smile"
+    } else if (value >= 50 && value < 101) {
+        return "frown"
+    } else if (value >= 100 && value < 251) {
+        return "angry"
+    } else if(value > 250){
+        return "painful"
+    } else {
+        return "calm"
+    }
+}
+
+
+
+
 // 액션 타입을 정의해준다.
 const GETITEMS = 'list/GETDATA'
 const SELECTITEM = 'list/SELECTITEM'
@@ -46,10 +63,11 @@ export default handleActions({
         const itemFind = state.items.filter((item) => {
             return payload === item.MSRSTE_NM
         });
+        const status = imgCount(itemFind[0].IDEX_MVL)
 
         return {
             ...state,
-            'selected': itemFind[0]
+            'selected': { data : itemFind[0], status }
         }
     },
 
@@ -62,3 +80,4 @@ export default handleActions({
 
 
 }, initialState)
+

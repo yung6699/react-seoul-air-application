@@ -4,7 +4,11 @@ import * as listActions from 'store/modules/list'
 import DataList from 'components/DataList'
 import DataDetail from 'components/DataDetail'
 import Loading from 'components/Loading'
-import './App.css'
+import classNames from 'classnames/bind'
+import styles from './App.css'
+
+
+const cx = classNames.bind(styles);
 
 class App extends Component {
 
@@ -30,12 +34,12 @@ class App extends Component {
 
         return (
             <div>
-                <div className="container">
+                <div className="container container-color">
                     <DataList handleReload={getItems} // 새로고침
                         handleSelect={this.handleSelect}
                         handleChange={this.handleChange} items={filteredItems} kekeyword={keyword}/>
                 </div>
-                <div className="container">
+                <div className={cx("container",(selected)?selected.status+'-color': 'container-color')}>
                     {(selected) ? <DataDetail items={filteredItems} selected={selected}/> : <Loading/>}
                 </div>
             </div>

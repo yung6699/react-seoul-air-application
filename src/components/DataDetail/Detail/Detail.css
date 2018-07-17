@@ -41,3 +41,23 @@
   width: 100%;
   padding: 5px 0px;
 }
+
+.smile-color {
+  background-color : #3588e4
+}
+
+.frown-color {
+  background-color : #06e450
+}
+
+.angry-color {
+  background-color : #FF7B31
+}
+
+.painful-color {
+  background-color : #FF3F36
+}
+
+.calm-color {
+  background-color : #7D7D7D
+}

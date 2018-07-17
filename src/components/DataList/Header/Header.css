@@ -1,6 +1,5 @@
 .header {
-  position: fixed;
-  width: 400px;
+  width: 100%;
   padding: 10px 0px;
   text-align: center;
   box-sizing: border-box;

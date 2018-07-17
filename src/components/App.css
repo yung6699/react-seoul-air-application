@@ -1,6 +1,7 @@
 body {
   margin: 0;
   padding: 0;
+  background-color:#F9FAFA;
 }
 
 ul {
@@ -25,4 +26,8 @@ a {
   overflow-y: scroll;
   border: 10px solid #000000;
   border-radius: 10px;
+}
+
+.container-color {
+  background-color : #ffffff;
 }
