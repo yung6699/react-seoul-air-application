@@ -1,26 +1,27 @@
 import React, {Component} from 'react';
-import classNames from 'classnames/bind'
+import classNames from 'classnames/bind';
 import styles from './Detail.css';
 import DataTable from 'components/DataDetail/DataTable';
-import loaction from 'static/images/location.svg'
+import loaction from 'static/images/location.svg';
 import moment from 'moment';
+import PropTypes from 'prop-types';
 
 const cx = classNames.bind(styles);
 class Detail extends Component {
     constructor(props) {
         super(props);
-        this.state = {}
+        this.state = {};
     }
 
     render() {
         const { selected } = this.props;
         
         moment.lang('ko', {
-            weekdays: ["일요일","월요일","화요일","수요일","목요일","금요일","토요일"],
-            weekdaysShort: ["일","월","화","수","목","금","토"],
+            weekdays: ['일요일','월요일','화요일','수요일','목요일','금요일','토요일'],
+            weekdaysShort: ['일','월','화','수','목','금','토'],
         });
 
-        const imgUrl = require('static/images/' + selected.status + '.svg')
+        const imgUrl = require('static/images/' + selected.status + '.svg');
         const data  = selected.data;
         
         return (
@@ -49,6 +50,11 @@ class Detail extends Component {
         );
     }
 }
+
+
+Detail.propTypes = {
+    selected: PropTypes.object.isRequired
+};
 
 
 

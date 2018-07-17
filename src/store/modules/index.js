@@ -1,9 +1,5 @@
-import { combineReducers } from 'redux';
+import {combineReducers} from 'redux';
 import list from './list';
-import { penderReducer } from 'redux-pender';
+import {penderReducer} from 'redux-pender';
 
-export default combineReducers({
-  list,
-  pender: penderReducer
-
-});
+export default combineReducers({list, pender: penderReducer});
