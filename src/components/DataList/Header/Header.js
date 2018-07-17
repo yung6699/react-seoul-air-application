@@ -34,5 +34,5 @@ export default Header;
 Header.propTypes = {
     handleChange: PropTypes.func.isRequired,
     handleReload: PropTypes.func.isRequired,
-    keyword: PropTypes.string.isRequired
+    keyword: PropTypes.string
 };

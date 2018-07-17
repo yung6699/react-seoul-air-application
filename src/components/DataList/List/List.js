@@ -35,7 +35,7 @@ List.propTypes = {
     handleReload: PropTypes.func.isRequired,
     handleSelect: PropTypes.func.isRequired,
     handleChange: PropTypes.func.isRequired,
-    keyword: PropTypes.string.isRequired
+    keyword: PropTypes.string
 };
 
  

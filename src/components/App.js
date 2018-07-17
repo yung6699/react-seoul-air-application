@@ -73,7 +73,7 @@ App.propTypes = {
     change: PropTypes.func.isRequired,
     selectedItem: PropTypes.func.isRequired,
     items: PropTypes.array.isRequired,
-    keyword: PropTypes.string.isRequired,
-    selected: PropTypes.object.isRequired
+    keyword: PropTypes.string,
+    selected: PropTypes.object
 };
 

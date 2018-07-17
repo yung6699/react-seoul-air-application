@@ -39,7 +39,6 @@ export const selectedItem = createAction(SELECTITEM, value => value);
 // 모듈의 초기 상태를 정의합니다.
 const initialState = {
     keyword: '',
-    selected:'',
     items : []
 };
 
