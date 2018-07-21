@@ -3,7 +3,7 @@ module.exports = {
     "env": {
       "browser": true,
       "es6": true,
-      "amd": true // require 사용
+      "node":true
     },
     "extends": [
       "eslint:recommended", "plugin:react/recommended"
